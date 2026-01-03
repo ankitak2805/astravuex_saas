@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Asset Inspections - ASTRAVUEX{% endblock %}
+
+{% block content %}
+<section class="feature-detail-hero">
+    <div class="container">
+        <div class="feature-badge">Assurance</div>
+        <h1>Asset Inspections</h1>
+        <p class="hero-description">Automatically monitor, evaluate, and analyze all assets in real time, ensuring comprehensive inspections and reliable technical due diligence.</p>
+    </div>
+</section>
+
+<section class="feature-detail-content">
+    <div class="container">
+        <div class="feature-benefits-grid">
+            <div class="benefit-card">
+                <img src="{% static 'images/inspection.png' %}" alt="Asset Inspection">
+                <h3>Real-Time Monitoring</h3>
+                <p>Continuous monitoring of all assets with instant alerts and notifications for any anomalies or issues.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/Asset Dashboard.png' %}" alt="Asset Dashboard">
+                <h3>Comprehensive Evaluation</h3>
+                <p>Complete assessment of asset condition, performance, and compliance with industry standards.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/Project progress graph.png' %}" alt="Progress Analysis">
+                <h3>Data-Driven Analysis</h3>
+                <p>Advanced analytics and reporting to identify trends and optimize asset performance.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/inspection.png' %}" alt="Due Diligence">
+                <h3>Reliable Due Diligence</h3>
+                <p>Comprehensive technical due diligence with detailed documentation and audit trails.</p>
+            </div>
+        </div>
+        
+        <div class="feature-cta">
+            <h2>Ready to optimize your asset management?</h2>
+            <a href="{% url 'pricing' %}" class="btn btn-primary btn-large">Get Started</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

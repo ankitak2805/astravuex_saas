@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Project Tracking - ASTRAVUEX{% endblock %}
+
+{% block content %}
+<section class="feature-detail-hero">
+    <div class="container">
+        <div class="feature-badge">Project Management</div>
+        <h1>Project Tracking</h1>
+        <p class="hero-description">Unify every project, milestone, and task in a single platform to track progress and optimize performance.</p>
+    </div>
+</section>
+
+<section class="feature-detail-content">
+    <div class="container">
+        <div class="feature-benefits-grid">
+            <div class="benefit-card">
+                <img src="{% static 'images/Project progress.png' %}" alt="Milestone Tracking">
+                <h3>Milestone Tracking</h3>
+                <p>Track key milestones and deliverables across all projects with real-time updates and progress indicators.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/Project progress graph.png' %}" alt="Performance Insights">
+                <h3>Performance Insights</h3>
+                <p>Gain valuable insights into project performance, resource allocation, and team productivity.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/Project Tracking dashboard.png' %}" alt="Unified Dashboard">
+                <h3>Unified Dashboard</h3>
+                <p>Access all project information from a single, intuitive dashboard with customizable views.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/Project progress graph.png' %}" alt="Actionable Analytics">
+                <h3>Actionable Analytics</h3>
+                <p>Make data-driven decisions with comprehensive analytics and reporting capabilities.</p>
+            </div>
+        </div>
+        
+        <div class="feature-cta">
+            <h2>Ready to optimize your project management?</h2>
+            <a href="{% url 'pricing' %}" class="btn btn-primary btn-large">Get Started</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

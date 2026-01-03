@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Blog - ASTRAVUEX{% endblock %}
+
+{% block content %}
+<section class="blog-hero">
+    <div class="container">
+        <h1 class="section-title">Blog & Insights</h1>
+        <p class="section-subtitle">Latest news and updates from AstravueX</p>
+    </div>
+</section>
+
+<section class="blog-list-section">
+    <div class="container">
+        {% if posts %}
+        <div class="blog-grid">
+            {% for post in posts %}
+            <article class="blog-card">
+                {% if post.image %}
+                <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                {% else %}
+                <img src="https://via.placeholder.com/400x250/4A90E2/ffffff?text={{ post.title|slice:':20' }}" alt="{{ post.title }}">
+                {% endif %}
+                <div class="blog-card-content">
+                    <span class="blog-date">{{ post.created_at|date:"F d, Y" }}</span>
+                    <h3><a href="{% url 'blog:detail' post.slug %}">{{ post.title }}</a></h3>
+                    <p>{{ post.excerpt|truncatewords:30 }}</p>
+                    <a href="{% url 'blog:detail' post.slug %}" class="read-more">Read More →</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-posts">
+            <p>No blog posts available yet. Check back soon!</p>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+{% endblock %}

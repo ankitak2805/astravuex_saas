@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Pricing - ASTRAVUEX{% endblock %}
+
+{% block content %}
+<section class="pricing-hero">
+    <div class="container">
+        <h1 class="section-title">Flexible Pricing Plans</h1>
+        <p class="section-subtitle">Astravue's plans offer you everything you need to manage your finances effortlessly, with options tailored to your unique needs.</p>
+        
+        <div class="pricing-toggle">
+            <span class="toggle-label">Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="pricingToggle">
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-label">Yearly <span class="discount-badge">- Save 20%</span></span>
+        </div>
+    </div>
+</section>
+
+<section class="pricing-section">
+    <div class="container">
+        <div class="pricing-grid">
+            <!-- Starter Plan -->
+            <div class="pricing-card">
+                <h3 class="plan-name">Starter</h3>
+                <div class="plan-price">
+                    <span class="currency">$</span>
+                    <span class="price monthly-price">1,000</span>
+                    <span class="price yearly-price" style="display: none;">9,600</span>
+                    <span class="period">/month</span>
+                </div>
+                <p class="plan-description">Up to 5 vessels / projects Core Q-Route optimization Basic reporting</p>
+                <ul class="plan-features">
+                    <li>Up to 5 vessels / projects</li>
+                    <li>Core Q-Route optimization</li>
+                    <li>Basic reporting</li>
+                    <li>Email support</li>
+                    <li>Basic analytics</li>
+                </ul>
+                <a href="#" class="btn btn-outline btn-block">Choose Starter</a>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card featured">
+                <div class="popular-badge">Most Popular</div>
+                <h3 class="plan-name">Enterprise</h3>
+                <div class="plan-price">
+                    <span class="currency">$</span>
+                    <span class="price monthly-price">3,000</span>
+                    <span class="price yearly-price" style="display: none;">28,800</span>
+                    <span class="period">/month</span>
+                </div>
+                <p class="plan-description">Up to 20 vessels / projects Advanced project & asset management Real time alerts & risk tools API integrations</p>
+                <ul class="plan-features">
+                    <li>Up to 20 vessels / projects</li>
+                    <li>Advanced project & asset management</li>
+                    <li>Real time alerts & risk tools</li>
+                    <li>API integrations</li>
+                    <li>Priority support</li>
+                    <li>Advanced analytics</li>
+                    <li>Custom reporting</li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-block">Choose Enterprise</a>
+            </div>
+
+            <!-- Custom Plan -->
+            <div class="pricing-card">
+                <h3 class="plan-name">Custom</h3>
+                <div class="plan-price">
+                    <span class="price-custom">Custom</span>
+                </div>
+                <p class="plan-description">Unlimited fleets / assets Full suite (Q-Route + Risk +Compliance) Dedicated supports & SLAs Enterprise licensing</p>
+                <ul class="plan-features">
+                    <li>Unlimited fleets / assets</li>
+                    <li>Full suite (Q-Route + Risk + Compliance)</li>
+                    <li>Dedicated support & SLAs</li>
+                    <li>Enterprise licensing</li>
+                    <li>Custom integrations</li>
+                    <li>Dedicated account manager</li>
+                    <li>On-premise deployment option</li>
+                </ul>
+                <a href="{% url 'contact' %}" class="btn btn-outline btn-block">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Comparison -->
+<section class="features-comparison">
+    <div class="container">
+        <h2 class="section-title">Compare Plans</h2>
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Starter</th>
+                        <th>Enterprise</th>
+                        <th>Custom</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vessels / Projects</td>
+                        <td>Up to 5</td>
+                        <td>Up to 20</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td>Q-Route Optimization</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Asset Management</td>
+                        <td>Basic</td>
+                        <td>Advanced</td>
+                        <td>Full Suite</td>
+                    </tr>
+                    <tr>
+                        <td>Risk Management</td>
+                        <td>-</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Real-time Alerts</td>
+                        <td>-</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>API Integrations</td>
+                        <td>-</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Support</td>
+                        <td>Email</td>
+                        <td>Priority</td>
+                        <td>Dedicated</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Reporting</td>
+                        <td>-</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>SLA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>✓</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">Pricing FAQs</h2>
+        
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can I switch plans later?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What payment methods do you accept?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We accept all major credit cards, bank transfers, and can set up invoicing for enterprise customers.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is there a free trial?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, we offer a 14-day free trial for all plans. No credit card required to start.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What happens if I exceed my plan limits?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We'll notify you when you're approaching your limits. You can upgrade your plan or contact us for custom solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Still have questions?</h2>
+        <p>Our team is here to help you choose the right plan</p>
+        <a href="{% url 'contact' %}" class="btn btn-primary btn-large">Contact Sales</a>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,345 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>ASTRAVUEX</h1>
+                <p class="hero-subtitle">Quantum SaaS transforming Energy and Marine with optimised solutions</p>
+                <a href="{% url 'features:list' %}" class="btn btn-primary btn-large">Explore Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="{% static 'images/Asset Dashboard.png' %}" alt="Dashboard Preview" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <h2 class="section-title">Our Results in Numbers</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">80%</div>
+                <p class="stat-title">of Users Save More Each Month</p>
+                <p class="stat-description">Our AI-powered Asset Inspection Tool help users save an average of 20% more by identifying areas for improvement.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5-15%</div>
+                <p class="stat-title">Saved in Fuel consumption</p>
+                <p class="stat-description">Fuel savings, CO₂ reduction, arrival accuracy, throughput gain achieved through Advanced Routing Tool.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">70%</div>
+                <p class="stat-title">Less Time Spent on Manual Tracking</p>
+                <p class="stat-description">Realtime dashboards and intelligent reporting enable managers to maintain transparency and drive projects toward successful completion.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5X</div>
+                <p class="stat-title">Faster Risk Identification</p>
+                <p class="stat-description">Actionable Risk Intelligence Enabling smarter decisions through continuous monitoring and assessment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Operational Uncertainty Section -->
+<section class="operational-section">
+    <div class="container">
+        <h2 class="section-title">Facing Operational Uncertainty?</h2>
+        <p class="section-subtitle">AstravueX, One platform, many solutions, powering smarter decisions and stronger outcomes across every operation.</p>
+        
+        <div class="operational-flow">
+            <!-- Challenge Card -->
+            <div class="operational-card">
+                <h3 class="card-title">Challenge</h3>
+                <div class="card-points">
+                    <div class="point-item">
+                        <span class="point-icon icon-red">🚢</span>
+                        <p>Inefficient routes increase fuel costs and emissions.</p>
+                    </div>
+                    <div class="point-item">
+                        <span class="point-icon icon-red">👥</span>
+                        <p>Disconnected teams and siloed data slow decisions</p>
+                    </div>
+                    <div class="point-item">
+                        <span class="point-icon icon-red">⚠️</span>
+                        <p>Compliance gaps and unsafe conditions</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Arrow -->
+            <div class="flow-arrow">→</div>
+            
+            <!-- Impact Card -->
+            <div class="operational-card">
+                <h3 class="card-title">Impact</h3>
+                <div class="card-points">
+                    <div class="point-item">
+                        <span class="point-icon icon-orange">💰</span>
+                        <p>Rising operational costs and carbon footprint.</p>
+                    </div>
+                    <div class="point-item">
+                        <span class="point-icon icon-orange">📊</span>
+                        <p>Projects exceed budgets and timelines</p>
+                    </div>
+                    <div class="point-item">
+                        <span class="point-icon icon-orange">🔥</span>
+                        <p>Reactive firefighting instead of proactive control</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Arrow -->
+            <div class="flow-arrow">→</div>
+            
+            <!-- Solution Card -->
+            <div class="operational-card">
+                <h3 class="card-title">Solution</h3>
+                <div class="card-points">
+                    <div class="point-item">
+                        <span class="point-icon icon-green">🎯</span>
+                        <p>Quantum-driven routing that minimises fuel and delays</p>
+                    </div>
+                    <div class="point-item">
+                        <span class="point-icon icon-green">📈</span>
+                        <p>Real-time visibility into progress, costs, and resources</p>
+                    </div>
+                    <div class="point-item">
+                        <span class="point-icon icon-green">🛡️</span>
+                        <p>Continuous monitoring and automated risk scoring</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Preview Section -->
+<section class="features-preview">
+    <div class="container">
+        <!-- Asset Inspections -->
+        <div class="feature-block">
+            <div class="feature-badge">Assurance</div>
+            <h2>Asset Inspections</h2>
+            <p class="feature-description">Automatically monitor, evaluate, and analyze all assets in real time, ensuring comprehensive inspections and reliable technical due diligence.</p>
+            <div class="feature-benefits">
+                <div class="benefit-item">
+                    <span class="benefit-icon">📊</span>
+                    <p>Real-Time Monitoring</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <p>Comprehensive Evaluation</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">📈</span>
+                    <p>Data-Driven Analysis</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">📋</span>
+                    <p>Reliable Due Diligence</p>
+                </div>
+            </div>
+            <a href="{% url 'features:asset_inspections' %}" class="btn btn-outline">Read More About This</a>
+        </div>
+
+        <!-- Project Management -->
+        <div class="feature-block feature-reverse">
+            <div class="feature-badge">Project Management</div>
+            <h2>Project Tracking</h2>
+            <p class="feature-description">Unify every project, milestone, and task in a single platform to track progress and optimize performance.</p>
+            <div class="feature-benefits">
+                <div class="benefit-item">
+                    <span class="benefit-icon">🎯</span>
+                    <p>Milestone Tracking</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">💡</span>
+                    <p>Performance Insights</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">📱</span>
+                    <p>Unified Dashboard</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">🔍</span>
+                    <p>Actionable Analytics</p>
+                </div>
+            </div>
+            <a href="{% url 'features:project_tracking' %}" class="btn btn-outline">Read More About This</a>
+        </div>
+
+        <!-- Risk Management -->
+        <div class="feature-block">
+            <div class="feature-badge">Risk management</div>
+            <h2>Risk Management</h2>
+            <p class="feature-description">Define risk categories for operations, compliance, and safety, and monitor exposures in real time.</p>
+            <div class="feature-benefits">
+                <div class="benefit-item">
+                    <span class="benefit-icon">🗺️</span>
+                    <p>Clear Risk Mapping</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">⏱️</span>
+                    <p>Real-Time Tracking</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">🧪</span>
+                    <p>Scenario Analysis</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">🛡️</span>
+                    <p>Compliance Assurance</p>
+                </div>
+            </div>
+            <a href="{% url 'features:risk_management' %}" class="btn btn-outline">Read More About This</a>
+        </div>
+
+        <!-- Routing Planning -->
+        <div class="feature-block feature-reverse">
+            <div class="feature-badge">Routing planning</div>
+            <h2>AstravueX Routing</h2>
+            <p class="feature-description">Harness the power of quantum algorithms to revolutionize your voyage planning.</p>
+            <div class="routing-features">
+                <div class="routing-feature">
+                    <h3>Lower Emissions</h3>
+                    <p>Most efficient routes, leading to cost savings and environmental benefits.</p>
+                    <img src="{% static 'images/Route saving.png' %}" alt="Lower Emissions" loading="lazy">
+                </div>
+                <div class="routing-feature">
+                    <h3>On-Time Voyages</h3>
+                    <p>Factor in real-time weather, currents, and port congestion to maintain schedule reliability.</p>
+                    <img src="{% static 'images/On-time voyages.png' %}" alt="On-Time Voyages" loading="lazy">
+                </div>
+                <div class="routing-feature">
+                    <h3>Dynamic Adaptation</h3>
+                    <p>Save small amounts automatically with every purchase.</p>
+                    <img src="{% static 'images/Dynamic adaption.png' %}" alt="Dynamic Adaptation" loading="lazy">
+                </div>
+                <div class="routing-feature">
+                    <h3>AstravueX Q-Routing</h3>
+                    <p>Optimised routes for efficient voyages</p>
+                    <img src="{% static 'images/Quantum Route Optimisation 2.png' %}" alt="Q-Routing" loading="lazy">
+                </div>
+                <div class="routing-feature">
+                    <h3>Mitigate weather risks</h3>
+                    <p>Stay ahead of weather hazards to protect your vessels and crew.</p>
+                    <img src="{% static 'images/weather grapgh.png' %}" alt="Weather" loading="lazy">
+                </div>
+            </div>
+            <a href="{% url 'features:routing' %}" class="btn btn-outline">Read More About This</a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">Common Questions & Answers</h2>
+        <p class="section-subtitle">Here's everything you need to know about AstravueX, from features to getting started.</p>
+        
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is AstravueX?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>AstravueX is an integrated platform that helps organizations in energy, renewables, and marine sectors optimize projects, assets, routing, and risk management through intelligent analytics and quantum-enabled solutions.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Who can benefit from AstravueX?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>AstravueX is designed for organizations in the energy, renewables, and marine sectors looking to optimize their operations, manage risks, and improve efficiency.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How does Quantum Routing work in AstravueX?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Our quantum routing uses advanced algorithms to calculate the most efficient routes, taking into account weather, currents, fuel consumption, and other variables to minimize costs and environmental impact.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can AstravueX track asset performance and inspections?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, AstravueX provides comprehensive asset monitoring and inspection tools that track performance in real-time and ensure compliance with technical standards.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How does AstravueX help with risk management?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>AstravueX provides real-time risk monitoring, categorization, and scenario analysis to help you identify and mitigate potential issues before they become problems.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is AstravueX suitable for multi-project and multi-team management?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolutely! AstravueX is designed to handle multiple projects and teams simultaneously, providing unified dashboards and collaboration tools.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can AstravueX integrate with existing systems?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, AstravueX offers API integrations with Enterprise and Custom plans to connect with your existing systems and workflows.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do I get started?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Getting started is easy! Choose a pricing plan that fits your needs, sign up, and our team will help you onboard and configure the platform for your organization.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="faq-cta">
+            <p>Got any specific questions?</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Transform Your Operations?</h2>
+        <p>Join leading organizations already using AstravueX to optimize their operations</p>
+        <a href="{% url 'pricing' %}" class="btn btn-primary btn-large">Get Started Today</a>
+    </div>
+</section>
+
+{% endblock %}

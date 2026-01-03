@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Risk Management - ASTRAVUEX{% endblock %}
+
+{% block content %}
+<section class="feature-detail-hero">
+    <div class="container">
+        <div class="feature-badge">Risk Management</div>
+        <h1>Risk Management</h1>
+        <p class="hero-description">Define risk categories for operations, compliance, and safety, and monitor exposures in real time.</p>
+    </div>
+</section>
+
+<section class="feature-detail-content">
+    <div class="container">
+        <div class="feature-benefits-grid">
+            <div class="benefit-card">
+                <img src="{% static 'images/Risk management dashboard.png' %}" alt="Clear Risk Mapping">
+                <h3>Clear Risk Mapping</h3>
+                <p>Categorize and map risks across operations, compliance, and safety with clear visual indicators.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/Risk trends.png' %}" alt="Real-Time Tracking">
+                <h3>Real-Time Tracking</h3>
+                <p>Monitor risk exposures in real-time with automated alerts and notifications.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/Risk trends.png' %}" alt="Scenario Analysis">
+                <h3>Scenario Analysis</h3>
+                <p>Perform what-if analysis and scenario planning to prepare for potential risks.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/Risk management dashboard.png' %}" alt="Compliance Assurance">
+                <h3>Compliance Assurance</h3>
+                <p>Ensure compliance with regulatory requirements and industry standards.</p>
+            </div>
+        </div>
+        
+        <div class="feature-cta">
+            <h2>Ready to strengthen your risk management?</h2>
+            <a href="{% url 'pricing' %}" class="btn btn-primary btn-large">Get Started</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

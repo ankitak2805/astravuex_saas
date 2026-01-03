@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}AstravueX Routing - ASTRAVUEX{% endblock %}
+
+{% block content %}
+<section class="feature-detail-hero">
+    <div class="container">
+        <div class="feature-badge">Routing Planning</div>
+        <h1>AstravueX Routing</h1>
+        <p class="hero-description">Harness the power of quantum algorithms to revolutionize your voyage planning.</p>
+    </div>
+</section>
+
+<section class="feature-detail-content">
+    <div class="container">
+        <div class="feature-benefits-grid">
+            <div class="benefit-card">
+                <img src="{% static 'images/Route saving.png' %}" alt="Lower Emissions">
+                <h3>Lower Emissions</h3>
+                <p>Most efficient routes, leading to cost savings and environmental benefits through optimized fuel consumption.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/On-time voyages.png' %}" alt="On-Time Voyages">
+                <h3>On-Time Voyages</h3>
+                <p>Factor in real-time weather, currents, and port congestion to maintain schedule reliability.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/Astravue q route.png' %}" alt="Quantum Optimization">
+                <h3>AstravueX Q-Routing</h3>
+                <p>Leverage quantum computing algorithms for optimized routes that traditional systems can't achieve.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <img src="{% static 'images/weather grapgh.png' %}" alt="Weather Risk Mitigation">
+                <h3>Mitigate Weather Risks</h3>
+                <p>Stay ahead of weather hazards to protect your vessels and crew with advanced forecasting.</p>
+            </div>
+        </div>
+        
+        <div class="feature-cta">
+            <h2>Ready to revolutionize your routing?</h2>
+            <a href="{% url 'pricing' %}" class="btn btn-primary btn-large">Get Started</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
